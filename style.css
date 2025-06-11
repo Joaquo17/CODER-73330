@@ -16,6 +16,7 @@ header { background-color: transparent; }
 .navbar-toggler { filter: invert(1); }
 .navbar-collapse { text-align: center; }
 .navbar-nav .nav-link {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #f2f2f2;
   font-size: 22px;
   margin: 0 8px;
@@ -146,6 +147,7 @@ header { background-color: transparent; }
   border-radius: 12px 12px 0 0;
 }
 .notis2 p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
   padding: 12px 16px;
   font-weight: 500;
