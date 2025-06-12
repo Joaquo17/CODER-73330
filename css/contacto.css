@@ -80,4 +80,19 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+  .texto-contacto,
+  .formulario {
+    width: 100% !important;
+    margin: 0 0 24px 0 !important;
+  }
 }
