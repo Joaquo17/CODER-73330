@@ -54,7 +54,6 @@ header { background-color: transparent; }
   bottom: 5px;
   padding: 24px 16px;
   background: linear-gradient(0deg, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.0) 100%);
-  color: #fff;
   border-radius: 0 0 16px 16px;
   box-sizing: border-box;
 }
@@ -142,7 +141,7 @@ header { background-color: transparent; }
 }
 .notis2 img {
   width: 100%;
-  height: 180px;
+  height: 300px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
 }
