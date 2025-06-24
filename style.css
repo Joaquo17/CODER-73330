@@ -2,34 +2,48 @@ body {
   background-color: aliceblue;
 }
 
-/* NAVBAR */
-header { background-color: transparent; }
-.navbar { background-color: blueviolet !important; }
-.navbar-logo {
+header {
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+header .navbar {
+  background-color: blueviolet;
+}
+header .navbar .navbar-logo {
   display: inline-block;
   color: aliceblue;
   text-decoration: none;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 45px;
   pointer-events: auto;
 }
-.navbar-toggler { filter: invert(1); }
-.navbar-collapse { text-align: center; }
-.navbar-nav .nav-link {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #f2f2f2;
-  font-size: 22px;
-  margin: 0 8px;
-  transition: color 0.2s;
-}
-.navbar-nav .nav-link:hover { color: #222; }
 
-/* TITULOS DE SECCION */
-.titulo-seccion { 
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.navbar-toggler {
+  filter: invert(1);
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: aliceblue;
+  font-size: 20px;
+  margin: 0 8px;
+  transition: color 0.2;
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(8.5, 8.5, 8.5);
+}
+
+.titulo-seccion {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2.3rem;
   font-weight: bold;
-  color: #181c2a;
+  color: #222;
   letter-spacing: 1px;
   margin-bottom: 0.5rem;
   position: relative;
@@ -45,65 +59,62 @@ header { background-color: transparent; }
   margin-top: 8px;
 }
 
-/* NOTICIA PRINCIPAL */
 .noticia-principal {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
   min-height: 320px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-  transition: box-shadow 0.2s;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2;
   display: block;
 }
 .noticia-principal:hover {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
-.imagenp {
+.noticia-principal .imagenp {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin: 0;
-  padding: 0;
-  border-radius: 16px 16px 16px 16px; 
+  border-radius: 16px 16px 16px 16px;
   display: block;
 }
-.noticia-overlay {
+.noticia-principal .noticia-overlay {
   position: absolute;
   left: 5px;
   right: 5px;
   bottom: 5px;
   padding: 24px 16px;
-  background: linear-gradient(0deg, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
   border-radius: 0 0 16px 16px;
   box-sizing: border-box;
 }
-.text1 {
-  color: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.noticia-principal .noticia-overlay .text1 {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
-.resumen-noticia {
-  color: #f2f2f2;
-  font-size: 1.1rem;
+.noticia-principal .noticia-overlay .resumen-noticia {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
   margin-bottom: 0;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* SIDEBAR */
 .sidebar {
   background: #eaf3fa;
   border-radius: 16px;
   padding: 28px 18px;
   margin-top: 24px;
   margin-bottom: 0;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 }
 .sidebar p {
-  color: black;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #222;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 25px;
   margin-bottom: 2rem;
 }
@@ -112,7 +123,7 @@ header { background-color: transparent; }
   align-items: flex-start;
   gap: 12px;
   padding: 14px 0;
-  border-bottom: 2px solid #d6d6d6;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 .sidebar .noticia-popular:last-child {
   border-bottom: none;
@@ -125,9 +136,9 @@ header { background-color: transparent; }
   flex-shrink: 0;
 }
 .sidebar a {
-  color: #111;
+  color: #222;
   font-size: 1.05rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
   line-height: 1.2;
   transition: color 0.2s;
@@ -137,87 +148,92 @@ header { background-color: transparent; }
 .sidebar a:hover {
   color: blueviolet;
 }
-.noticia-popular-titulo {
+.sidebar .noticia-popular-titulo {
   display: block;
   font-size: 1.08rem;
   margin-bottom: 2px;
 }
 
-/* NOTICIAS SECUNDARIAS */
 .notis2 a {
   display: block;
-  border-radius: 12px;
+  border-radius: 12x;
   overflow: hidden;
   text-decoration: none;
   color: #222;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .notis2 a:hover {
-  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
-  transform: translateY(-2px) scale(1.01);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-.notis2 img {
+.notis2 a img {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  border-radius: 12px 12px 0 0;
+  border-radius: 12px 12x 0 0;
 }
-.notis2 p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.notis2 a p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
   padding: 12px 16px;
   font-weight: 500;
   font-size: 1.1rem;
 }
 
-/* CONTACTO */
 .container {
   padding: 40px 20px;
   border-radius: 12px;
 }
-.texto-contacto {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.container .texto-contacto {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.2rem;
-  color: #333;
+  color: #222;
   line-height: 1.6;
 }
-.texto-contacto h1 {
+.container .texto-contacto h1 {
   font-size: 4rem;
   margin-bottom: 20px;
+  color: #222;
 }
-.formulario {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.container .formulario {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.formulario button,
-.formulario .btn-primary {
-  background-color: blueviolet !important;
-  color: white !important;
+.container .formulario button {
+  background-color: blueviolet;
+}
+.container .formulario .formulario .btn-primary {
+  background-color: blueviolet;
+  color: aliceblue;
   border: none;
   padding: 12px 24px;
   font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.2s, transform 0.2s;
 }
-.formulario button:hover,
-.formulario .btn-primary:hover {
-  background-color: #6a0dad !important;
+.container .formulario .formulario .btn-primary:hover {
+  background-color: rgb(112.1659751037, 26.2323651452, 191.7676348548);
   transform: translateY(-2px);
 }
 
-/* FOOTER */
 footer {
-  background: #f8f9fa;
-  border-top: 1px solid #e0e0e0;
+  background-color: aliceblue;
+  border-top: 1px solid #222;
 }
 footer .text-primary {
-  color: blueviolet !important;
+  color: blueviolet;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px 0;
 }
-footer a {
+footer .text-primary a {
   color: blueviolet;
   text-decoration: none;
+  transition: color 0.2s;
 }
-footer a:hover {
+footer .text-primary a:hover {
+  color: rgb(112.1659751037, 26.2323651452, 191.7676348548);
   text-decoration: underline;
 }
 
@@ -243,13 +259,13 @@ footer a:hover {
   }
   /* CONTACTO responsive */
   .container {
-    flex-direction: column !important;
+    flex-direction: column;
     align-items: stretch;
   }
   .texto-contacto,
   .formulario {
-    width: 100% !important;
-    margin: 0 0 24px 0 !important;
+    width: 100%;
+    margin: 0 0 24px 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -267,3 +283,5 @@ footer a:hover {
     font-size: 2.5rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
