@@ -110,5 +110,25 @@
 
 }
 
+/* Bolsa de valores internacional */
+.bolsa-box {
+  background: #f7fbfd; 
+  border: none;        
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(30,30,30,0.03); 
+  span {
+    font-size: 1.1rem;
+  }
+  iframe{
+    width: 100%;
+    min-width: 0;
+    height: 60px;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+  }
+}
 
 
