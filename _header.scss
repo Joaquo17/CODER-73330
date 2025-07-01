@@ -1,0 +1,33 @@
+header {
+  background-color: $secondarycolor;
+  color: white;
+  padding: 10px;
+  text-align: center;
+ .navbar{
+    background-color: $secondarycolor;
+    .navbar-logo{
+        display: inline-block;
+        color: $primarycolor;
+        text-decoration: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 45px;
+        pointer-events: auto;
+    }
+ }
+ }
+
+ .navbar-toggler { filter: invert(1); }
+.navbar-collapse {text-align: center; }
+
+.navbar-nav {
+    .nav-link{
+        font-family: $fontfamily;
+        color: $primarycolor;
+        font-size: 20px;
+        margin: 0 8px;
+        transition: color 0.2;
+        &:hover {
+            color: darken($tertiarycolor, 10%);
+        }
+}
+}

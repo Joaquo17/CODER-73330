@@ -1,0 +1,35 @@
+.container {
+    padding: 40px 20px;
+    border-radius: 12px;
+    .texto-contacto{
+        font-family: $fontfamily;
+        font-size: 1.2rem;
+        color: $tertiarycolor;
+        line-height: 1.6;
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: $tertiarycolor;
+        }
+    }
+.formulario {
+    font-family: $fontfamily;
+    button { 
+        background-color: $secondarycolor;
+    }
+     .formulario .btn-primary {
+        background-color: $secondarycolor;
+        color: $primarycolor;
+        border: none;
+        padding: 12px 24px;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s, transform 0.2s;
+        &:hover {
+            background-color: darken($secondarycolor, 10%);
+            transform: translateY(-2px);
+        }
+    }
+    }
+}

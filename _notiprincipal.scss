@@ -1,0 +1,94 @@
+.noticia-principal{
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    min-height: 320px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    transition: box-shadow 0.2;
+    display: block;
+    &:hover {
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    }
+.imagenp{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 16px 16px;
+    display: block;
+}
+.noticia-overlay{
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 24px 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 0 0 16px 16px;
+    box-sizing: border-box;
+    .text1 {
+        color: $primarycolor;
+        font-family: $fontfamily;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .resumen-noticia {
+        color: $primarycolor;
+        font-family: $fontfamily;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+}
+
+.sidebar{
+    background: #eaf3fa;
+    border-radius: 16px;
+    padding: 28px 18px;
+    margin-top: 24px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    p {
+        color: $tertiarycolor;
+        font-family: $fontfamily;
+        font-size: 25px;
+        margin-bottom: 2rem;
+    }
+    .noticia-popular {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px 0;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    img {
+        width: 54px;
+        height: 54px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+    a { 
+        color: $tertiarycolor;
+        font-size: 1.05rem;
+        font-family: $fontfamily;
+        text-decoration: none;
+        line-height: 1.2;
+        transition: color 0.2s;
+        display: block;
+        font-weight: 500;
+        &:hover {
+            color: $secondarycolor;
+        }
+    }
+    .noticia-popular-titulo {
+      display: block;
+      font-size: 1.08rem;
+      margin-bottom: 2px;
+    }
+}

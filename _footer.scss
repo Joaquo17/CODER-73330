@@ -1,0 +1,20 @@
+footer {
+    background-color: $primarycolor;
+    border-top: 1px solid $tertiarycolor;
+    .text-primary {
+        color: $secondarycolor;
+        font-family: $fontfamily;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 20px 0;
+        a {
+            color: $secondarycolor;
+            text-decoration: none;
+            transition: color 0.2s;
+            &:hover {
+                color: darken($secondarycolor, 10%);
+                text-decoration: underline;
+            }
+        }
+    }
+}
