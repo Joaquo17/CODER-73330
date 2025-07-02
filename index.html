@@ -6,10 +6,14 @@
     <title>INFOSA - Noticias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-expand-lg bg-violet">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-logo text-white" href="#">INFOSA</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
@@ -36,29 +40,30 @@
     <a class="noticia-principal col-12 col-lg-8 position-relative p-1" href="#">
       <img class="imagenp" src="https://www.rionegro.com.ar/wp-content/uploads/2024/08/dolar-e1724930015170.jpeg" alt="">
       <div class="noticia-overlay">
-        <h1 class="text1">Título de la Noticia Principal</h1>
-        <p class="resumen-noticia">resumen o bajada de la noticia principal</p>
+        <h1 class="text1">Dólar hoy: a cuánto cotiza este miércoles 2 de julio</h1>
+        <p class="resumen-noticia">Seguí el minuto a minuto de la cotización del dólar y del resto de las divisas.</p>
       </div>
     </a>
+
     <!-- Sidebar -->
      
     <aside class="sidebar col-12 col-lg-4">
       <p class="sidebar-title mb-3">LO QUE TENÉS QUE SABER</p>
       <div class="noticia-popular">
         <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/12/gta-6-3243960.jpg?tf=3840x" alt="">
-        <a href="#"><span class="noticia-popular-titulo fw-bold"></span>Titulo de ejemplo</a>
+        <a href="#"><span class="noticia-popular-titulo fw-bold"></span>GTA 6 quizás no llegue solo</a>
       </div>
       <div class="noticia-popular">
         <img src="https://fotos.perfil.com/2025/05/30/javier-milei-2033234.jpg" alt="">
-        <a href="#"><span class="noticia-popular-titulo fw-bold"></span>Titulo de ejemplo</a>
+        <a href="#"><span class="noticia-popular-titulo fw-bold"></span>Milei presidirá una cumbre del Mercosur</a>
       </div>
       <div class="noticia-popular">
         <img src="https://media.tycsports.com/files/2023/03/22/547841/bestia_1440x810_wmk.webp" alt="">
-        <a href="#">Titulo de ejemplo</a>
+        <a href="#">CS2 | El equipo argentino BESTIA se clasificó al Major </a>
       </div>
       <div class="noticia-popular">
         <img src="https://media.puntal.com.ar/p/ef208e61a864e1ca2a5772c86546eb3b/adjuntos/270/imagenes/001/587/0001587393/1200x0/smart/jubilados-marcha-2jpg.jpg" alt="">
-        <a href="#">Titulo de ejemplo</a>
+        <a href="#">Aumentos a jubilados en julio 2025: de cuánto será la suba</a>
       </div>
     </aside>
   </div>
@@ -67,49 +72,56 @@
 
 
   <section class="row notis2 g-4 mt-4">
-    <a class="col-12 col-md-4" href="#">
+    <a class="col-12 col-md-4" href="#" data-aos="fade-up">
       <img class="img-fluid rounded" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/12/gta-6-3243960.jpg?tf=3840x" alt="">
-      <p class="p-2">Titulo de la Noticia</p>
+      <p class="p-2">GTA 6 quizás no llegue solo: podría venir con una app complementaria</p>
     </a>
-    <a class="col-12 col-md-4" href="#">
+    <a class="col-12 col-md-4" href="#" data-aos="fade-up">
       <img class="img-fluid rounded" src="https://fotos.perfil.com/2025/05/30/javier-milei-2033234.jpg" alt="">
-      <p class="p-2">Titulo de la Noticia</p>
+      <p class="p-2">Milei presidirá una cumbre del Mercosur con agenda fría y traspaso de mando a Lula</p>
     </a>
-    <a class="col-12 col-md-4" href="#">
+    <a class="col-12 col-md-4" href="#" data-aos="fade-up">
       <img class="img-fluid rounded" src="https://media.tycsports.com/files/2023/03/22/547841/bestia_1440x810_wmk.webp" alt="">
-      <p class="p-2">Titulo de la Noticia</p>
+      <p class="p-2">CS2 | El equipo argentino BESTIA se clasificó al Major de Austin</p>
     </a>
-    <a class="col-12 col-md-4" href="#">
+    <a class="col-12 col-md-4" href="#" data-aos="fade-up">
       <img class="img-fluid rounded" src="https://media.puntal.com.ar/p/ef208e61a864e1ca2a5772c86546eb3b/adjuntos/270/imagenes/001/587/0001587393/1200x0/smart/jubilados-marcha-2jpg.jpg" alt="">
-      <p class="p-2">Titulo de la Noticia</p>
+      <p class="p-2">Aumentos a jubilados en julio 2025: de cuánto será la suba y quiénes la cobran</p>
     </a>
-    <a class="col-12 col-md-4" href="#">
+    <a class="col-12 col-md-4" href="#" data-aos="fade-up">
       <img class="img-fluid rounded" src="https://www.capital21.cdmx.gob.mx/noticias/wp-content/uploads/2023/02/Ucrania-ataques-Rusia-01.jpg" alt="">
-      <p class="p-2">Titulo de la Noticia</p>
+      <p class="p-2">Ucrania pide apoyo "constante" tras anuncio de EEUU de suspensión de envío de algunas armas</p>
     </a>
-    <a class="col-12 col-md-4" href="#">
+    <a class="col-12 col-md-4" href="#" data-aos="fade-up">
       <img class="img-fluid rounded" src="https://s.france24.com/media/display/7a556428-4247-11f0-b4c9-005056bf30b7/w:1280/p:16x9/000_49E98G2.jpg" alt="">
-      <p class="p-2">Titulo de la Noticia</p>
+      <p class="p-2">Trump amenaza con deportar a Elon Musk, de nacionalidad sudafricana</p>
     </a>
     
   </section>
 </main>
 
-<footer class="bg-light border-top mt-5">
-  <div class="container py-4">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
-        <span class="fw-bold text-primary" style="font-size: 1.3rem;">INFOSA</span>
-        <div class="small text-muted mt-2">Todos los derechos reservados &copy; 2025</div>
-      </div>
-      <div class="col-12 col-md-4 text-center text-md-end">
-        <span class="text-dark">Contacto:</span>
-        <a class="text-decoration-none text-primary" href="mailto:joaquinvidal.a17@gmail.com">joaquinvidal.a17@gmail.com</a>
-      </div>
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="#">Inicio</a>
+      <a href="#">Contacto</a>
+      <a href="#">Política de privacidad</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="footer-copy">
+      © 2025 INFOSA. Todos los derechos reservados.
     </div>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

@@ -3,12 +3,13 @@ body {
 }
 
 header {
+  background-color: blueviolet;
   color: white;
-  padding: 0;
+  padding: 10px;
   text-align: center;
 }
 header .navbar {
-  background: linear-gradient(90deg, #2d0d46 0%, #421a5f 100%) !important;
+  background-color: blueviolet;
 }
 header .navbar .navbar-logo {
   display: inline-block;
@@ -35,7 +36,7 @@ header .navbar .navbar-logo {
   transition: color 0.2;
 }
 .navbar-nav .nav-link:hover {
-  color: #9e6fbc;
+  color: rgb(8.5, 8.5, 8.5);
 }
 
 .noticia-principal {
@@ -84,7 +85,7 @@ header .navbar .navbar-logo {
 }
 
 .sidebar {
-  background: #ffffff;
+  background: #eaf3fa;
   border-radius: 16px;
   padding: 28px 18px;
   margin-top: 24px;
@@ -94,7 +95,6 @@ header .navbar .navbar-logo {
 .sidebar p {
   color: #222;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
   font-size: 25px;
   margin-bottom: 2rem;
 }
@@ -298,52 +298,24 @@ header .navbar .navbar-logo {
 }
 
 footer {
-  background: linear-gradient(0deg, #f3eaff 0%, rgb(255, 255, 255) 60%);
-  border-top: 2px solid blueviolet;
-  padding: 32px 0 16px 0;
-  color: #222;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid #222;
+}
+footer .text-primary {
+  color: blueviolet;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px 0;
 }
-footer .footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-footer .footer-links {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-footer .footer-links a {
-  color: #222;
+footer .text-primary a {
+  color: blueviolet;
   text-decoration: none;
-  font-weight: 500;
   transition: color 0.2s;
 }
-footer .footer-links a:hover {
+footer .text-primary a:hover {
   color: rgb(112.1659751037, 26.2323651452, 191.7676348548);
   text-decoration: underline;
-}
-footer .footer-social {
-  display: flex;
-  gap: 14px;
-}
-footer .footer-social a {
-  color: blueviolet;
-  font-size: 1.4rem;
-  transition: color 0.2s;
-}
-footer .footer-social a:hover {
-  color: rgb(112.1659751037, 26.2323651452, 191.7676348548);
-}
-footer .footer-copy {
-  text-align: center;
-  font-size: 0.95rem;
-  color: #888;
-  margin-top: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -407,4 +379,4 @@ footer .footer-copy {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csss.map */

@@ -44,7 +44,7 @@
 }
 
 .sidebar{
-    background: #eaf3fa;
+    background: #ffffff;
     border-radius: 16px;
     padding: 28px 18px;
     margin-top: 24px;
@@ -53,6 +53,7 @@
     p {
         color: $tertiarycolor;
         font-family: $fontfamily;
+        font-weight: bold;
         font-size: 25px;
         margin-bottom: 2rem;
     }

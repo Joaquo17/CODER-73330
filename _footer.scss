@@ -1,20 +1,52 @@
 footer {
-    background-color: $primarycolor;
-    border-top: 1px solid $tertiarycolor;
-    .text-primary {
-        color: $secondarycolor;
-        font-family: $fontfamily;
-        font-size: 1.2rem;
-        text-align: center;
-        padding: 20px 0;
-        a {
-            color: $secondarycolor;
-            text-decoration: none;
-            transition: color 0.2s;
-            &:hover {
-                color: darken($secondarycolor, 10%);
-                text-decoration: underline;
-            }
-        }
+  background: linear-gradient(0deg, #f3eaff 0%, $primarycolor 60%);
+  border-top: 2px solid $secondarycolor;
+  padding: 32px 0 16px 0;
+  color: $tertiarycolor;
+  font-family: $fontfamily;
+  font-size: 1.1rem;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      color: $tertiarycolor;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+      &:hover {
+        color: darken($secondarycolor, 10%);
+        text-decoration: underline;
+      }
     }
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 14px;
+    a {
+      color: $secondarycolor;
+      font-size: 1.4rem;
+      transition: color 0.2s;
+      &:hover {
+        color: darken($secondarycolor, 10%);
+      }
+    }
+  }
+
+  .footer-copy {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #888;
+    margin-top: 10px;
+  }
 }
