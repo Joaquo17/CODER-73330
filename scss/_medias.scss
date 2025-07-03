@@ -1,6 +1,9 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 991.98px) {
+  .noticia-principal {
+    height: 450px;
+  }
   .noticia-principal, .sidebar {
     margin-bottom: 24px;
   }
@@ -48,9 +51,13 @@
 
 @media (max-width: 576px) {
   .noticia-nacionales {
-    height: 180px;
-    .text1 { font-size: 1.1rem; }
-    .resumen-noticia { font-size: 0.95rem; }
-    .nacionales-caption { padding: 0.7rem 0.8rem; }
+    height: 65vw; 
+    min-height: 410px;
+    max-height: none;
+  }
+  .video-nacionales {
+    height: 65vw; 
+    min-height: 410px;
+    max-height: none;
   }
 }
