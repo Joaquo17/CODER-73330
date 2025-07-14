@@ -1,10 +1,16 @@
-$primarycolor :rgb(255, 255, 255);
-$secondarycolor: blueviolet;
+$primarycolor :#fff;
+$secondarycolor: #7c3aed;;
 $tertiarycolor: #222;
+$accentcolor: #2faae2; 
+$background: #f8f6fc;
 $fontfamily: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 body {
-  background-color: $primarycolor;
+   background-color: $primarycolor;
+   background: $background;
+   font-family: $fontfamily;
+   line-height: 1.6;
+  
 }
 
 @import "header";
