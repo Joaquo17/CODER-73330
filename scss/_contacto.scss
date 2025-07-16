@@ -1,0 +1,58 @@
+.container {
+    padding: 40px 20px;
+    border-radius: 12px;
+    .texto-contacto{
+        font-family: $fontfamily;
+        font-size: 1.2rem;
+        color: $tertiarycolor;
+        line-height: 1.6;
+        h1 {
+            font-size: 2.7rem; 
+            margin-bottom: 20px;
+            color: $tertiarycolor;
+        }
+    }
+    .formulario {
+        border-radius: 16px;
+        font-family: $fontfamily;
+        padding: 2.5rem 2rem;
+        margin-top: 2rem;
+        button { 
+            background-color: $secondarycolor;
+        }
+         .formulario .btn-primary {
+            background: $secondarycolor;
+            color: $primarycolor;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            &:hover {
+                background: darken($secondarycolor, 10%);
+                transform: translateY(-2px) scale(1.03);
+            }
+        }
+        input, textarea {
+            border-radius: 8px;
+            border: 1.5px solid #e0e0e0;
+            font-size: 1.1rem;
+            &:focus {
+                border-color: $secondarycolor;
+                box-shadow: 0 0 0 2px rgba(124,58,237,0.08);
+            }
+        }
+    }
+}
+.texto-contacto h1 {
+  font-size: 2.7rem; 
+  color: $secondarycolor;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.texto-contacto p {
+  font-size: 1rem;
+  color: $tertiarycolor;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  max-width: 350px;
+}

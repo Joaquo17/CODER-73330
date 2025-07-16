@@ -1,0 +1,106 @@
+.noticia-principal{
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    min-height: 320px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    transition: box-shadow 0.2;
+    display: block;
+    margin-bottom: 1.5rem;
+    &:hover {
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    }
+
+
+
+    
+.imagenp{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 16px 16px;
+    display: block;
+}
+.noticia-overlay{
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 24px 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 0 0 16px 16px;
+    box-sizing: border-box;
+    .text1 {
+        color: $primarycolor;
+        font-family: $fontfamily;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .resumen-noticia {
+        color: $primarycolor;
+        font-family: $fontfamily;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+}
+
+.sidebar {
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px 12px;
+  margin-top: 26px;
+  margin-bottom: 0;
+  box-shadow: 0 4px 24px rgba(124,58,237,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  .sidebar-title {
+    color: $accentcolor;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .noticia-popular {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+    &:last-child {
+      border-bottom: none;
+    }
+    img {
+      width: 100px;   
+      height: 100px;  
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(124,58,237,0.10);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    a {
+      color: $tertiarycolor;
+      font-size: 1.08rem;
+      font-family: $fontfamily;
+      text-decoration: none;
+      line-height: 1.2;
+      font-weight: 500;
+      transition: color 0.2s;
+      &:hover {
+        color: $secondarycolor;
+        text-decoration: underline;
+      }
+    }
+    &:hover img {
+      transform: scale(1.07) rotate(-2deg);
+    }
+  }
+}

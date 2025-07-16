@@ -1,0 +1,35 @@
+header {
+  color: white;
+  padding: 0;
+  text-align: center;
+  .navbar {
+    background: linear-gradient(90deg, #361053 0%, #512074 100%) !important;
+    .navbar-logo {
+      display: inline-block;
+      color: $primarycolor;
+      text-decoration: none;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 45px;
+      pointer-events: auto;
+    }
+  }
+}
+
+ .navbar-toggler { filter: invert(1); }
+.navbar-collapse {text-align: center; }
+
+.navbar-nav {
+    .nav-link{
+        color: #fff;
+        font-weight: 500;
+        font-family: $fontfamily;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+        color: $primarycolor;
+        font-size: 20px;
+        margin: 0 8px;
+        transition: color 0.2;
+        &:hover {
+            color: $accentcolor;
+        }
+}
+}
