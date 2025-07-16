@@ -7,7 +7,7 @@
         color: $tertiarycolor;
         line-height: 1.6;
         h1 {
-            font-size: 4rem;
+            font-size: 2.7rem; 
             margin-bottom: 20px;
             color: $tertiarycolor;
         }
@@ -45,7 +45,7 @@
     }
 }
 .texto-contacto h1 {
-  font-size: 2.7rem;
+  font-size: 2.7rem; // No uses 4rem aquí
   color: $secondarycolor;
   font-weight: bold;
   margin-bottom: 1rem;
