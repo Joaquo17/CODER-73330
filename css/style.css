@@ -458,6 +458,9 @@ footer .footer-copy {
     min-height: 410px;
     max-height: none;
   }
+  .texto-contacto h1 {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
