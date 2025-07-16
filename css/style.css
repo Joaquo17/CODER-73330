@@ -346,6 +346,17 @@ header .navbar .navbar-logo {
   max-width: 350px;
 }
 
+@media (max-width: 576px) {
+  .texto-contacto h1 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  .texto-contacto p {
+    font-size: 0.95rem;
+    max-width: 95vw;
+    margin-bottom: 1rem;
+  }
+}
 footer {
   background: linear-gradient(0deg, #f3eaff 0%, #fff 60%);
   border-top: 2px solid #7c3aed;
