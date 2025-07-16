@@ -315,7 +315,6 @@ header .navbar .navbar-logo {
   border-radius: 8px;
   font-weight: 600;
   font-size: 1.2rem;
-  transition: background 0.2s, transform 0.2s;
 }
 .container .formulario .formulario .btn-primary:hover {
   background: rgb(95.3302325581, 20.4279069767, 223.5720930233);
@@ -460,7 +459,7 @@ footer .footer-copy {
     font-size: 2.5rem;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 573px) {
   .noticia-nacionales {
     height: 65vw;
     min-height: 410px;

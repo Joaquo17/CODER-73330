@@ -27,7 +27,6 @@
             border-radius: 8px;
             font-weight: 600;
             font-size: 1.2rem;
-            transition: background 0.2s, transform 0.2s;
             &:hover {
                 background: darken($secondarycolor, 10%);
                 transform: translateY(-2px) scale(1.03);
@@ -45,7 +44,7 @@
     }
 }
 .texto-contacto h1 {
-  font-size: 2.7rem; // No uses 4rem aquí
+  font-size: 2.7rem; 
   color: $secondarycolor;
   font-weight: bold;
   margin-bottom: 1rem;
